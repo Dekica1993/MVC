@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+﻿@using SEDC.PizzaApp.Models.View
+
+@model OrderViewModel
+
+<h2>Order details:</h2>
+
+<p>@Model.UserFullName Ordered @Model.PizzaName @Model.UserFullName paid @Model.Price by @Model.PaymantMethod</p>
+
+=======
+﻿@using SEDC.PizzaApp.Models.viewModel
+
+@model OrderDetailsViewModel
+
+@*@<h2>Order details:</h2>
+
+<p>@Model.UserFullName Ordered @Model.PizzaName @Model.UserFullName paid @Model.Price by @Model.PaymantMethod</p>*@
+
+<partial name="~/View/Shared/Partials/_OrderDetailsPartial.cshtml" for="@Model"/>
+
+@Html.ActionLink("Back to the Order page", "Index")
+
+<a asp-controller="Home" asp-action="Index">Back to the Home page</a>
+>>>>>>> 9ec4d26 (first commit)
+
+
+

@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\Domain\" />
+    <None Remove="Models\Enums\" />
+    <None Remove="Views\Pizza\" />
+<<<<<<< HEAD
+    <None Remove="Models\View\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Views\Order\" />
+=======
+    <None Remove="Views\Order\" />
+    <None Remove="Views\Shared\Partials\" />
+    <None Remove="Mappers\" />
+>>>>>>> 9ec4d26 (first commit)
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\Domain\" />
+    <Folder Include="Models\Enums\" />
+    <Folder Include="Views\Pizza\" />
+<<<<<<< HEAD
+    <Folder Include="Models\View\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\Order\" />
+=======
+    <Folder Include="Views\Order\" />
+    <Folder Include="Views\Shared\Partials\" />
+    <Folder Include="Mappers\" />
+>>>>>>> 9ec4d26 (first commit)
+  </ItemGroup>
+</Project>

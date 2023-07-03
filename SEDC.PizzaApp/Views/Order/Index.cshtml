@@ -1,0 +1,44 @@
+<<<<<<< HEAD
+﻿@using SEDC.PizzaApp.Models.View
+
+@model List<OrderViewModel>
+
+<ol>
+    @for (int i = 0; i < Model.Count; i++)
+        {
+            <li>@Model.ElementAt(i).PizzaName - @Model.ElementAt(i).UserFullName - @Model.ElementAt(i).Price</li>
+        }
+</ol>
+=======
+﻿@using SEDC.PizzaApp.Models.viewModel
+
+@model List<OrderListViewModel>
+
+@{
+    ViewData["Title"] = "List of Orders";
+}
+
+<partial name ="~/View/Shared/Partials/_OrderGreetingPartial.cshtml" />
+
+<a class="btn btn-success" asp-action="CreateOrder">Create new Order</a>
+
+<h2>List Of Orders:</h2>
+
+<ol>
+    @foreach(OrderListViewModel viewModel in Model)
+{
+            <li>Pizza name: @viewModel.PizzaName - User: @viewModel.UserFullName</li>
+
+            <a asp-action="Details" asp-route-Id="@viewModel.Id">See Details</a>
+
+            <a asp-action="Delete" asp-route-Id="@viewModel.Id">Delete order</a>
+}
+</ol>
+
+<h4>Fun Facts:</h4>
+<p>Total number of Orders: @ViewBag.NumberofOrders</p>
+<p>first user Of our APP: @ViewBag.FirstUser.FirstName @ViewBag.FirstUser.LastName</p>
+
+<p>@ViewBag.Date</p>
+
+>>>>>>> 9ec4d26 (first commit)

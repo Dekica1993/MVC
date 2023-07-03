@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+﻿@using SEDC.PizzaApp.Models.Domain
+
+@model Pizza
+
+<h2> Details for @Model.Name</h2>
+<p>Price: @Model.Price</p>
+=======
+﻿@using SEDC.PizzaApp.Models.viewModel
+
+@model PizzaViewModel
+
+<a partial name="~/Views/Shared/Partials/_PizzaDetailsPartials.cshtml"/>
+
+<h4>Is on Promotion: @Model.IsOnPromotion</h4>
+<h2> Details for @Model.Name</h2>
+<p>Price: @Model.Price</p>
+
+>>>>>>> 9ec4d26 (first commit)
